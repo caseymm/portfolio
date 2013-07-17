@@ -130,6 +130,11 @@ background-repeat:repeat; font-family: "Helvetica"; font-weight: normal; font-st
   background-image:url('../images/banks.png'); 
 }
 
+#hovBanks{
+  background-color: rgba(0, 0, 0, 0.85);
+  color:#fff;
+}
+
 #winterfest{
   background-image:url('../images/winterfest.png');
 }
@@ -154,8 +159,18 @@ background-repeat:repeat; font-family: "Helvetica"; font-weight: normal; font-st
   background-image:url('../images/django.png');  
 }
 
+#hovDjango{
+  background-color: rgba(0, 0, 0, 0.8);
+  color:#fff;
+}
+
 #galapagos{
   background-image:url('../images/galapagos.png');  
+}
+
+#hovGalapagos{
+  background-color: rgba(0, 0, 0, 0.85);
+  color:#fff;
 }
 
 #rain{
@@ -163,23 +178,51 @@ background-repeat:repeat; font-family: "Helvetica"; font-weight: normal; font-st
   background-repeat: no-repeat;
 }
 
+#hovRain{
+  background-color: rgba(0, 0, 0, 0.85);
+  color:#fff;
+}
+
 #peachtree{
   background-image:url('../images/peachtree.png');  
+}
+
+#hovPeachtree{
+  background-color: rgba(0, 0, 0, 0.85);
+  color:#fff;
 }
 
 #splost{
   background-image:url('../images/splost.png');  
 }
 
+#hovSplost{
+  background-color: rgba(0, 0, 0, 0.85);
+  color:#fff;
+}
+
 #sixDegrees{
   background-image:url('../images/force.png');  
+}
+
+#hovSixDegrees{
+  background-color: rgba(0, 0, 0, 0.85);
+  color:#fff;
+}
+
+.overlay{
+  width: 100%;
+height: 390px;
+padding: 90px 10px 10px 10px;
+line-height: 20px;
+  background-color: #fff;
+  -moz-border-radius: 2px;
+	border-radius: 2px;
 }
 
 .work{
   width: 100%;
   height:420px;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-top: .8em;
   margin-top: -7.15em;
   background-color: #fff;

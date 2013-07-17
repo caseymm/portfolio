@@ -105,7 +105,11 @@
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Rain</div>
     </div>
-    <div id="rain" class="work"> 
+    <div id="rain" class="work">
+      <div id="hovRain" class="overlay">
+      Compares precipiation to date (as of June 30, 2013) in the 50 most populated cities in the United States.
+      Data is presented through an animated svg that fills on dropdown select.
+    </div>
     </div>
     </a>
   </div>
@@ -116,7 +120,11 @@
       <div class="nameHead inset-text">Peachtree</div>
     </div>
     <div id="peachtree" class="work">
-          <!--<div class="nameHead inset-textDark">Data</div>-->
+          <div id="hovPeachtree" class="overlay">
+      I created this interactive for the 2013 Peachtree Road Race.  The interactive provided relevant information for the
+      race day, including maps and a live twitter feed. The 2013 "Outfits" section was added to the page and updated
+      after the race.
+    </div>
     </div>
     </a>
   </div>
@@ -134,6 +142,10 @@
       <div class="nameHead inset-text">SPLOST</div>
     </div>
     <div id="splost" class="work">
+      <div id="hovSplost" class="overlay">
+        I created this graphic to run with a story about SPLOST taxes in Georgia. This interactive employs nvd3.js for the
+        stacked bar chart and leaflet for the map section.
+      </div>
     </div>
   </div>
     </a>
@@ -144,6 +156,10 @@
       <div class="nameHead inset-text">Six &#176;</div>
     </div>
     <div id="sixDegrees" class="work">
+      <div id="hovSixDegrees" class="overlay">
+        This project runs off of the d3 force-based layout and is used here to show the relationship between actors and actresses
+        who have recently filmed projects in Georgia.
+      </div>
     </div>
     </a>
   </div>
@@ -154,6 +170,10 @@
       <div class="nameHead inset-text">Banks</div>
     </div>
     <div id="banks" class="work">
+      <div id="hovBanks" class="overlay">
+        This interactive was created for a class project and displays the number of failed U.S. banks from 2000 through
+        September of 2012. This project runs off of the highcharts library.
+      </div>
     </div>
     </a>
   </div>
@@ -174,7 +194,11 @@
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Django</div>
     </div>
-    <div id="django" class="work"> 
+    <div id="django" class="work">
+      <div id="hovDjango" class="overlay">
+        This was the first Django project that I created. Other accessible templates include the team template as
+        well as the individual player template. Only Men's Basketball data is accessible. 
+      </div>
     </div>
     </a>
   </div>
@@ -184,7 +208,11 @@
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">GALAPAGOS</div>
     </div>
-    <div id="galapagos" class="work"> 
+    <div id="galapagos" class="work">
+      <div id="hovGalapagos" class="overlay">
+        I participated in the front and back end remodel of UNC's Living Galapagos site. Primary work was within the
+        templates, but I worked with the models and views as well.
+      </div>
     </div>
     </a>
   </div>
@@ -229,8 +257,8 @@
 </tr>
 		    
 <tr>
-	<td><b><i>Atlanta Journal-Constitution</i></b></br><i>Digital Intern</i></br><i>Internship starts in June of 2013</i></td>
-	<td><div class="dates"><b>Atlanta, GA</b><br /><i>June 2013 - August 2013</i></div></td>					
+	<td><b>Atlanta Journal-Constitution</b></br>Digital Intern</br>Internship starts in June of 2013</td>
+	<td><div class="dates"><b>Atlanta, GA</b><br />June 2013 - August 2013</div></td>					
 </tr>
 		    
 <tr>
@@ -341,12 +369,60 @@
 <script>
   $(document).ready(function() {
 
-    $('#maps').hide();
+    $('#hovRain').hide();
+    $('#hovPeachtree').hide();
+    $('#hovSplost').hide();
+    $('#hovSixDegrees').hide();
+    $('#hovBanks').hide();
+    $('#hovDjango').hide();
+    $('#hovGalapagos').hide();
   });
   
-  $("#mapBlock").bind("click", function() {
-    $('#maps').show();
+ $('#rain').hover(function() {
+    $('#hovRain').show();
+    }, function() {
+    $('#hovRain').hide();
   });
+ 
+ $('#peachtree').hover(function() {
+    $('#hovPeachtree').show();
+    }, function() {
+    $('#hovPeachtree').hide();
+  });
+ 
+ $('#splost').hover(function() {
+    $('#hovSplost').show();
+    }, function() {
+    $('#hovSplost').hide();
+  });
+ 
+ $('#sixDegrees').hover(function() {
+    $('#hovSixDegrees').show();
+    }, function() {
+    $('#hovSixDegrees').hide();
+  });
+ 
+ $('#banks').hover(function() {
+    $('#hovBanks').show();
+    }, function() {
+    $('#hovBanks').hide();
+  });
+ 
+ $('#django').hover(function() {
+    $('#hovDjango').show();
+    }, function() {
+    $('#hovDjango').hide();
+  });
+ 
+ $('#galapagos').hover(function() {
+    $('#hovGalapagos').show();
+    }, function() {
+    $('#hovGalapagos').hide();
+  });
+ 
+  /*$("#mapBlock").bind("click", function() {
+    $('#maps').show();
+  });*/
 </script>
   
 </body>
