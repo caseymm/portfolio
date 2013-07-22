@@ -116,6 +116,7 @@ background-repeat:repeat; font-family: "Helvetica"; font-weight: normal; font-st
 
 @media screen and (max-width:763px){
 .about { font-family: "Helvetica"; font-weight: normal; color: #fff; font-size: 14px; line-height: 1.5; }
+.dontShow{display:none;}
 }
 
 .contact { font-family: "Bebas"; font-weight: normal; color: #fff; font-size: 1.8em; line-height: 2; margin-bottom: 17px; }
@@ -305,4 +306,71 @@ line-height: 20px;
 	border-color: #ffffff;
   -webkit-box-shadow: 2px 2px 4px 1px #666666;
 	box-shadow: 2px 2px 4px 1px #666666;
+}
+
+.coaster{
+    position: absolute;
+    bottom: 8px;
+    margin: 0px -2px 0px -10px;
+    padding-right: 10px;
+    width: 90%;
+    overflow:hidden;
+}
+
+.coasterWidth{
+    width:350px;
+}
+
+.pushDown{
+    padding-top:116px;
+    margin-left: -10px;
+}
+
+.double{
+    margin-top: -138px;
+margin-left: 2px;
+
+}
+
+.threeD{
+    color: #8F8F8F;
+    font-family: Bebas;
+    font-size: 5em; 
+}
+
+@media screen and (max-width:1018px){
+.coaster{
+    position: absolute;
+    bottom: 8px;
+    margin: 0px -2px 0px -10px;
+    padding-right: 10px;
+    width: 85%;
+    overflow:hidden;
+}
+}
+
+@media screen and (max-width:768px){
+.coaster{
+    position: absolute;
+    bottom: 8px;
+    margin: 0px -2px 0px -10px;
+    padding-right: 10px;
+    width: 94%;
+    overflow:hidden;
+}
+}
+
+@media screen and (max-width:640px){
+.coaster{
+    position: absolute;
+    bottom: 8px;
+    margin: 0px -2px 0px -10px;
+    padding-right: 10px;
+    width: 92%;
+    overflow:hidden;
+}
+}
+
+#runIt{
+    cursor: pointer;
 }
