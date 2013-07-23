@@ -374,3 +374,9 @@ margin-left: 2px;
 #runIt{
     cursor: pointer;
 }
+
+.cylon{
+    width: 100px;
+    float: right;
+    margin: -150px -5px;
+}

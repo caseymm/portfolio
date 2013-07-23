@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="91px"
+	 height="129px" viewBox="0 0 91 129" enable-background="new 0 0 91 129" xml:space="preserve">
+<g id="Layer_1">
+</g>
+<g id="Layer_2">
+	<line fill="none" stroke="#B2B2B2" stroke-miterlimit="10" x1="41.176" y1="85.285" x2="48.715" y2="85.285"/>
+	<line fill="none" stroke="#B2B2B2" stroke-miterlimit="10" x1="41.176" y1="90.333" x2="48.715" y2="90.333"/>
+	<line fill="none" stroke="#B2B2B2" stroke-miterlimit="10" x1="40.147" y1="95.667" x2="48.715" y2="95.667"/>
+	<line fill="none" stroke="#B2B2B2" stroke-miterlimit="10" x1="39.682" y1="100.368" x2="49.802" y2="100.368"/>
+	<line fill="none" stroke="#B2B2B2" stroke-miterlimit="10" x1="39.191" y1="105.319" x2="50.158" y2="105.319"/>
+	<line fill="none" stroke="#B2B2B2" stroke-miterlimit="10" x1="38.651" y1="110.765" x2="50.158" y2="110.765"/>
+	<line fill="none" stroke="#B2B2B2" stroke-miterlimit="10" x1="38.16" y1="115.716" x2="50.907" y2="115.716"/>
+</g>
+<g id="Layer_4">
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M64.667,101.333c0,0-7.643,10.764-8.821,14.382"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M25,98c0,0,9.962,13.665,10.105,15.658"/>
+	<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M48.334,80L51,117h4.667c0,0,6.667-49,12-55
+		c-2,22.333-3.333,31-3,39.333c6.333-8,10.333-15,10.333-15s-2.334-20.667,0-30c-0.333-5,0.666-5.667,0-8S74.334,46,74.334,46
+		l-1-2.333c0,0,3.332-2.667-4.334-9c2.667-0.333,3.667-1-2.333-8s-10.999-13.333-21.333-13s-17.667,8.667-19.667,11
+		s-9,11-3.333,9.667c-4.333,5-7.338,8.333-2.169,10.333c-2.165,4.667-3.958,2.333-2.728,16c0.563,15-0.401,24-0.401,24L25,98
+		c0,0,1-25.667-2-35.667S34,90,35.333,117C38,117.334,38,117.334,38,117.334l3.667-37L48.334,80z"/>
+</g>
+<g id="Layer_3">
+	<path display="none" stroke="#000000" stroke-miterlimit="10" d="M24,46.333L46.135,58L68,46.333C68,46.333,60,60,46,69
+		C33.667,60.667,24,46.333,24,46.333z"/>
+	<g id="Layer_6">
+		<rect x="28.854" y="49.938" fill="#CE0909" width="2.796" height="3.667"/>
+	</g>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M24,46.333L46.135,58L68,46.333C68,46.333,60,60,46,69
+		C33.667,60.667,24,46.333,24,46.333z"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M25,47.083L46.062,60.6l21.062-13.517c0,0-12.313,13.517-20.9,18.411
+		C35.03,58.502,28.581,51.553,25,47.083z"/>
+	<path fill="none" d="M31.65,53c0,0,13.725,10.25,14.35,10.25s13.562-9.646,13.562-9.646S46.125,62.75,46,62.75
+		s-14.817-9.812-14.815-10"/>
+</g>
+<g id="Layer_5">
+	<polyline points="46.135,58 63.5,49.25 46,60.833 28.5,49.583 28.186,48.54 	"/>
+	<path d="M46,69c0,0,17.301-12.833,19.317-18.667C52.005,61.304,47.27,65.488,46.135,65.494s-14.34-9.732-14.885-11.161
+		s2.166,6,14.25,13.75"/>
+</g>
+</svg>
