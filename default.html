@@ -20,6 +20,7 @@
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/modernizr.foundation.js"></script>
+  <script src="js/foundation.min.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -43,32 +44,17 @@
 </head>
 <body>
 
-<div class="contain-to-grid fixed">
-    <nav class="top-bar">
-  <ul class="title-area">
+<div class="fixed contain-to-grid">
+  <ul class="header">
     <!-- Title Area -->
-    <li class="name">
-      <h1><a href="#about">Casey Miller </a></h1>
-      
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar"><a href="#"><span></span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li class="divider"></li>
-      <li><a href="#about">About</a></li>
-      <li class="divider"></li>
-      <li><a href="#work">Work</a></li>
-      <li class="divider"></li>
-      <li><a href="#resume">Resume</a></li>
-      <li class="divider"></li>
-      <li><a href="#resume">Contact</a></li>
-
-  </section>
-</nav>
+    <!--<li class="name">
+      <a href="#about">Casey Miller </a>
+    </li>-->
+      <a href="#about"><li>About</li></a>
+      <a href="#work"><li>Work</li></a>
+      <a href="#resume"><li>Resume</li></a>
+      <a href="#resume"><li>Contact</li></a>
+    </ul>
 </div>
      
 
@@ -79,10 +65,11 @@
   <div class="four columns">
     <div id="runIt">
     <div id="black" class="backgroundHead">
-      <div class="threeD">Casey <br /> Miller
+      <!--<div class="threeD">Casey <br /> Miller
       </div>
-      <div class="double nameHead">Casey <br /> Miller</div>
-      <!--<iframe width="100%" height="97%" scrolling=yes frameborder="0" src="http://caseymmiller.com/UNC/instagram_fancybox/"></iframe>-->
+      <div class="double nameHead">Casey <br /> Miller</div>-->
+      <span class ="clickMe">Click Me</span>
+      <div class="nameHead">Casey <br /> Miller</div>
     <div class="coaster">
       <div class="coasterWidth">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="768px"
@@ -255,7 +242,7 @@
         My name is Casey and I’m a rising senior at UNC Chapel Hill majoring in Journalism with a specialization
         in Multimedia. I’ve put this site together as a way to showcase some of the work that I’ve done.<br /><br />
         
-        <span class="dontShow">In my spare time I practice Tae Kwon Do and catch up on tv shows that I've missed during the week. I also enjoy taking pictures, but only as a hobby.<br /><br /></span>
+        <!--<span class="dontShow">In my spare time I practice Tae Kwon Do and catch up on tv shows that I've missed during the week. I also enjoy taking pictures, but only as a hobby.<br /><br /></span>-->
         
         Please feel free to take a look around and let me know if you have any questions or comments. I look forward to hearing from you.
           </div>
@@ -281,29 +268,29 @@
   </div>
   
   <div class="four columns">
-    <a href="http://www.ajc.com/weather/precipitation-comparison/" TARGET="_blank">
+    <a href="http://www.myajc.com/news/hope-scholarships/" TARGET="_blank">
     <div id="black" class="typeHead">
-      <div class="nameHead inset-text">Rain</div>
+      <div class="nameHead inset-text">HOPE</div>
     </div>
-    <div id="rain" class="work">
-      <div id="hovRain" class="overlay">
-      Compares precipiation to date (as of June 30, 2013) in the 50 most populated cities in the United States.
-      Data is presented through an animated svg that fills on dropdown select.
+    <div id="bubbles" class="work">
+      <div class="overlayThis">
+      Built with d3, this graphic displays information related to the number of students attending school on a HOPE scholarship for a sampling
+      of schools in Georgia. I built this for the AJC this summer and it is slated to run with the lottery package in September.
     </div>
     </div>
     </a>
   </div>
   
   <div class="four columns">
-    <a href="http://www.myajc.com/news/sports/ajc-peachtree-dashboard/" TARGET="_blank">
+    <a href="http://www.myajc.com/news/hope-scholarships/" TARGET="_blank">
     <div id="black" class="typeHead">
-      <div class="nameHead inset-text">Peachtree</div>
+      <div class="nameHead inset-text">Lottery</div>
     </div>
-    <div id="peachtree" class="work">
-          <div id="hovPeachtree" class="overlay">
-      I created this interactive for the 2013 Peachtree Road Race.  The interactive provided relevant information for the
-      race day, including maps and a live twitter feed. The 2013 "Outfits" section was added to the page and updated
-      after the race.
+    <div id="compMap" class="work">
+          <div class="overlayThis">
+      These choropleth comparison maps are built with d3. One displays where HOPE scholarships were received, while the other diplays where lottery
+      tickets were sold. Clicking on the counties will provide more detailed information and allows for comparison between two counties. I built this
+      for the AJC this summer and it is slated to run with the lottery package in September.
     </div>
     </div>
     </a>
@@ -317,28 +304,63 @@
   
   
   <div class="four columns">
-    <a href="http://www.myajc.com/news/splost-allocation/" TARGET="_blank">
+    <a href="http://www.ajc.com/weather/precipitation-comparison/" TARGET="_blank">
     <div id="black" class="typeHead">
-      <div class="nameHead inset-text">SPLOST</div>
+      <div class="nameHead inset-text">Rain</div>
     </div>
-    <div id="splost" class="work">
-      <div id="hovSplost" class="overlay">
-        I created this graphic to run with a story about SPLOST taxes in Georgia. This interactive employs nvd3.js for the
-        stacked bar chart and leaflet for the map section.
-      </div>
+    <div id="rain" class="work">
+      <div class="overlayThis">
+      Compares precipiation to date (as of June 30, 2013) in the 50 most populated cities in the United States.
+      Data is presented through an animated svg that fills on dropdown select.
     </div>
-  </div>
+    </div>
     </a>
+  </div>
   
   <div class="four columns">
-    <a href="http://alt.coxnewsweb.com/ajc/_projects_and_planning_group/iFrame/2013/cmiller/kevinBacon/" TARGET="_blank">
+    <a href="http://www.accessatlanta.com/entertainment/six-degrees/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Six &#176;</div>
     </div>
     <div id="sixDegrees" class="work">
-      <div id="hovSixDegrees" class="overlay">
+      <div class="overlayThis">
         This project runs off of the d3 force-based layout and is used here to show the relationship between actors and actresses
         who have recently filmed projects in Georgia.
+      </div>
+    </div>
+    </a>
+  </div>
+  
+  <div class="four columns">
+    <a href="http://www.myajc.com/news/hazardous-rail-crossings/" TARGET="_blank">
+    <div id="black" class="typeHead">
+      <div class="nameHead inset-text">Rail</div>
+    </div>
+    <div id="rail" class="work">
+      <div class="overlayThis">
+        This map displays the 10 most potentially hazardous rail crossings in Georgia. It is built in leaflet.js.
+      </div>
+    </div>
+    </a>
+  </div>
+  
+</div>
+
+<!-- row 4 -->
+
+<div class="row">
+  
+  <div class="four columns">
+    <a href="http://www.accessatlanta.com/s/atlanta-holiday-guide/holiday-guide-calendar/" TARGET="_blank">
+    <div id="black" class="typeHead">
+      <div class="nameHead inset-text">Calendar</div>
+    </div>
+    <div id="calendar" class="work">
+      <div class="overlayThis">
+        Though there is currently "dummy" information in this calendar, I promise it is fully functional. Running off of tabletop.js, it allows for the
+        admin to enter all of the information for the month into a Google spreadsheet. The information (in div form), will then be revealed on the specified
+        day of the month. The calendar pop-up also loads to the current day by default. A separate version running in November-December is based on the
+        day of the year.
       </div>
     </div>
     </a>
@@ -350,7 +372,7 @@
       <div class="nameHead inset-text">Banks</div>
     </div>
     <div id="banks" class="work">
-      <div id="hovBanks" class="overlay">
+      <div class="overlayThis">
         This interactive was created for a class project and displays the number of failed U.S. banks from 2000 through
         September of 2012. This project runs off of the highcharts library.
       </div>
@@ -358,9 +380,36 @@
     </a>
   </div>
   
+  <div class="four columns">
+    <div id="purple" class="backgroundHead">
+      <div class="more inset-text">More Work</div>
+      
+      <div class="about">
+        <ul>
+          <li><a href="http://www.myajc.com/news/school-countdown/" target="blank">School Countdown Calendar</a></li>
+          <li><a href="http://www.myajc.com/news/splost-allocation/" target="blank">SPLOST Allocation</a></li>
+          <li><a href="http://www.ajc.com/news/adolescent-drowning" target="blank">Adolescent Drowning</a></li>
+          <li><a href="http://www.ajc.com/news/sports/ajc-peachtree-2013" target="blank">Who's Running the Peachtree?</a></li>
+          <li><a href="http://www.myajc.com/news/sports/ajc-peachtree-dashboard/" target="blank">Peachtree Dashboard</a></li>
+          <li><a href="http://www.ajc.com/news/lottery-income" target="blank">GA Lottery Income</a></li>
+        </ul>
+      </div>
+      
+      <div class="moreSmall inset-text">I like leaflet (a lot)</div>
+      <div class="about">
+        <ul>
+          <li><a href="http://www.myajc.com/news/urban-farms/" target="blank">Urban Farms</a></li>
+          <li><a href="http://www.myajc.com/fireworks-2013" target="blank">4th of July Fireworks</a></li>
+          <li><a href="http://www.ajc.com/fulton-libraries/" target="blank">Fulton Libraries</a></li>
+        </ul>
+      </div>
+      </div>
+  </div>
+  
 </div>
 
-<!-- row 4 -->
+<!--Row 5 -->
+
 <div class="row">
   <div class="four columns">
     <div id="green" class="backgroundHead">
@@ -375,7 +424,7 @@
       <div class="nameHead inset-text">Django</div>
     </div>
     <div id="django" class="work">
-      <div id="hovDjango" class="overlay">
+      <div class="overlayThis">
         This was the first Django project that I created. Other accessible templates include the team template as
         well as the individual player template. Only Men's Basketball data is accessible. 
       </div>
@@ -389,14 +438,14 @@
       <div class="nameHead inset-text">GALAPAGOS</div>
     </div>
     <div id="galapagos" class="work">
-      <div id="hovGalapagos" class="overlay">
+      <div class="overlayThis">
         I participated in the front and back end remodel of UNC's Living Galapagos site. Primary work was within the
         templates, but I worked with the models and views as well.
       </div>
     </div>
     </a>
   </div>
-  <a name="resume"></a> 
+   
 </div>
 
 <!--row maps-->
@@ -404,8 +453,9 @@
 
 </div>-->
  
-<!-- row 5 -->
+<!-- row 6 -->
 <div class="row">
+  <a name="resume"></a>
   <div class="eight columns">
     
     <div class="resume">
@@ -437,6 +487,11 @@
 </tr>
 		    
 <tr>
+	<td><b>Reese News Lab</b></br>Interactive Designer/Programmer</td>
+	<td><div class="dates"><b>Chapel Hill, NC</b><br />August 2013 - Present</div></td>					
+</tr>
+
+<tr>
 	<td><b>Atlanta Journal-Constitution</b></br>Digital Interactive Intern</td>
 	<td><div class="dates"><b>Atlanta, GA</b><br />June 2013 - August 2013</div></td>					
 </tr>
@@ -447,7 +502,7 @@
 </tr>
                     
 <tr>
-	<td><b>Programs</b></br>Illustrator, Photoshop, Final Cut</br><br /><b>Skills</b></br>CSS, HTML, Javascript, Ajax, JQuery, Django, JSON and XML</td>
+	<td><b>Skills</b></br>CSS, HTML, Responsive Design, Javascript, jQuery, d3.js, SVG, and Django<b><br /><br />Programs</b></br>Illustrator, Photoshop, Final Cut</td>
 	<td> </td>					
 </tr>
                     
@@ -527,19 +582,17 @@
         814.566.2276 <br />
         <a href="mailto:caseymm@gmail.com">caseymm@gmail.com</a><br />
         <a href="https://twitter.com/caseymmiller">@caseymmiller</a><br />
-        caseymm37 | Skype <br />
-        <hr />
-        Other Work
+        caseymm37 | Skype
       </div>
       
-      <div class="about">
+      <!--<div class="about">
         <ul>
       <li><a href="http://www.ajc.com/news/sports/ajc-peachtree-2013" target="blank">Who's Running the Peachtree?</a></li>
       <li><a href="http://www.ajc.com/news/lottery-income" target="blank">GA Lottery Income</a></li>
       <li><a href="http://www.myajc.com/fireworks-2013" target="blank">Firework Map</a></li>
       <li><a href="http://www.ajc.com/news/adolescent-drowning" target="blank">Adolescent Drowning</a></li>
       </ul>
-      </div>
+      </div>-->
       <div class="cylon">
         
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="91px"
@@ -607,14 +660,8 @@
   
   $(document).ready(function() {
 
-    $('#hovRain').hide();
-    $('#hovPeachtree').hide();
-    $('#hovSplost').hide();
-    $('#hovSixDegrees').hide();
-    $('#hovBanks').hide();
-    $('#hovDjango').hide();
-    $('#hovGalapagos').hide();
-    
+    $('.clickMe').hide(); 
+    $('.overlayThis').hide();  
     
         animation.beginElement();
     
@@ -625,52 +672,21 @@
   });
   
   $('#runIt').click(function() {
-    console.log("slicking");
     animation.beginElement();
     white.beginElement();
     black.beginElement();
   });
   
- $('#rain').hover(function() {
-    $('#hovRain').show();
+  $('#runIt').hover(function() {
+    $(this).find('.clickMe').fadeIn("slow");
     }, function() {
-    $('#hovRain').hide();
+    $(this).find('.clickMe').fadeOut("slow");
   });
- 
- $('#peachtree').hover(function() {
-    $('#hovPeachtree').show();
+  
+ $('.work').hover(function() {
+    $(this).find('.overlayThis').slideDown();
     }, function() {
-    $('#hovPeachtree').hide();
-  });
- 
- $('#splost').hover(function() {
-    $('#hovSplost').show();
-    }, function() {
-    $('#hovSplost').hide();
-  });
- 
- $('#sixDegrees').hover(function() {
-    $('#hovSixDegrees').show();
-    }, function() {
-    $('#hovSixDegrees').hide();
-  });
- 
- $('#banks').hover(function() {
-    $('#hovBanks').show();
-    }, function() {
-    $('#hovBanks').hide();
-  });
- 
- $('#django').hover(function() {
-    $('#hovDjango').show();
-    }, function() {
-    $('#hovDjango').hide();
-  });
- 
- $('#galapagos').hover(function() {
-    $('#hovGalapagos').show();
-    }, function() {
-    $('#hovGalapagos').hide();
+    $(this).find('.overlayThis').slideUp();
   });
  
   /*$("#mapBlock").bind("click", function() {
