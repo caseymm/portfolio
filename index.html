@@ -16,11 +16,10 @@
   <!-- Included CSS Files (Uncompressed) -->
   
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="cssB/bootstrap.css">
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="js/modernizr.foundation.js"></script>
-  <script src="js/foundation.min.js"></script>
+  <script src="jsB/bootstrap.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -44,25 +43,42 @@
 </head>
 <body>
 
-<div class="fixed contain-to-grid">
-  <ul class="header">
-    <!-- Title Area -->
-    <!--<li class="name">
-      <a href="#about">Casey Miller </a>
-    </li>-->
-      <a href="#about"><li>About</li></a>
-      <a href="#work"><li>Work</li></a>
-      <a href="#resume"><li>Resume</li></a>
-      <a href="#resume"><li>Contact</li></a>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#about">Casey Miller</a>
+    
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a data-toggle="modal" href="#resume">Resume</a></li>
     </ul>
-</div>
-     
+
+  </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<div class="container">     
 
 <!-- row 1 -->
 <div class="spacer"></div>
 <a name="about"></a> 
 <div class="row">
-  <div class="four columns">
+  <div class="col-md-4">
     <div id="runIt">
     <div id="black" class="backgroundHead">
       <!--<div class="threeD">Casey <br /> Miller
@@ -72,12 +88,12 @@
       <div class="nameHead">Casey <br /> Miller</div>
     <div class="coaster">
       <div class="coasterWidth">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="768px"
-	 height="143px" viewBox="0 0 768 143" enable-background="new 0 0 768 143" xml:space="preserve">
-<g id="Layer_1">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="768px" height="143px" viewBox="0 0 768 143" enable-background="new 0 0 768 143" xml:space="preserve">
+<g id="Layer_1_1_">
 	<path fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" d="M-1.725,40.317c0,0,46.344-62.706,106.601,0
-		c27.434,29.394,34.293,73.484,76.914,73.484c42.621,0,66.626-29.883,66.626-44.58s-7.838-25.475-18.126-25.475
-		c-10.288,0-17.636,14.696-17.636,25.964c0,11.269,20.086,45.07,66.136,44.091C324.84,112.822,351,82.938,351,82.938"/>
+		c27.434,29.394,34.293,73.484,76.914,73.484s66.626-29.883,66.626-44.58c0-14.697-7.838-25.475-18.126-25.475
+		s-17.636,14.696-17.636,25.964c0,11.269,20.086,45.069,66.136,44.091S351,82.938,351,82.938"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="5.373" y1="32.523" x2="5.373" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="11.444" y1="25.348" x2="11.444" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="18.689" y1="20.636" x2="18.689" y2="143"/>
@@ -99,29 +115,29 @@
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="132.489" y1="84.174" x2="132.489" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="140.288" y1="91.658" x2="140.288" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="146.469" y1="101.207" x2="146.469" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="154.534" y1="107.978" x2="154.534" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="160.651" y1="110.358" x2="160.651" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="154.534" y1="107.979" x2="154.534" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="160.651" y1="110.357" x2="160.651" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="167.684" y1="112.564" x2="167.684" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="174.638" y1="113.822" x2="174.638" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="181.79" y1="113.802" x2="181.79" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="187.954" y1="113.587" x2="187.954" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="196.441" y1="112.564" x2="196.441" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="203.352" y1="110.358" x2="203.352" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="210.1" y1="107.978" x2="210.1" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="203.352" y1="110.357" x2="203.352" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="210.1" y1="107.979" x2="210.1" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="216.757" y1="106.12" x2="216.757" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="222.961" y1="101.207" x2="222.961" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="231.007" y1="97.087" x2="231.007" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="237.337" y1="103.068" x2="237.337" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="244.275" y1="107.978" x2="244.275" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="253.208" y1="110.358" x2="253.208" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="244.275" y1="107.979" x2="244.275" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="253.208" y1="110.357" x2="253.208" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="259.797" y1="112.564" x2="259.797" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="267.935" y1="113.587" x2="267.935" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="272.691" y1="113.802" x2="272.691" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="278.79" y1="113.802" x2="278.79" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="287.51" y1="113.587" x2="287.51" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="292.897" y1="112.564" x2="292.897" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="300.974" y1="110.358" x2="300.974" y2="143"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="308.774" y1="107.978" x2="308.774" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="300.974" y1="110.357" x2="300.974" y2="143"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="308.774" y1="107.979" x2="308.774" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="316.161" y1="106.12" x2="316.161" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="322.985" y1="103.068" x2="322.985" y2="143"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="331.157" y1="97.087" x2="331.157" y2="143"/>
@@ -139,10 +155,10 @@
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="418.149" y1="213.736" x2="418.149" y2="80.5"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="410.677" y1="209.669" x2="410.677" y2="80.5"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="404.615" y1="206.166" x2="404.615" y2="80.5"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="397.743" y1="200.901" x2="397.743" y2="80.5"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="397.743" y1="200.9" x2="397.743" y2="80.5"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="390.989" y1="197.12" x2="390.989" y2="80.5"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="382.858" y1="188.894" x2="382.858" y2="80.5"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="376.427" y1="177.433" x2="376.427" y2="80.5"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="382.858" y1="188.895" x2="382.858" y2="80.5"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="376.427" y1="177.434" x2="376.427" y2="80.5"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="368.394" y1="164.805" x2="368.394" y2="80.5"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="362.337" y1="154.439" x2="362.337" y2="80.5"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="355.246" y1="142.598" x2="355.246" y2="80.5"/>
@@ -162,9 +178,9 @@
 		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="532.859" y1="199.825" x2="532.859" y2="80.5"/>
 		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="526.105" y1="196.077" x2="526.105" y2="80.5"/>
 		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="517.975" y1="187.924" x2="517.975" y2="80.5"/>
-		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="511.543" y1="176.565" x2="511.543" y2="80.5"/>
+		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="511.543" y1="176.564" x2="511.543" y2="80.5"/>
 		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="503.51" y1="164.051" x2="503.51" y2="80.5"/>
-		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="497.453" y1="153.778" x2="497.453" y2="80.5"/>
+		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="497.453" y1="153.777" x2="497.453" y2="80.5"/>
 		<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="490.362" y1="142.043" x2="490.362" y2="80.5"/>
 	</g>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="751.405" y1="197.484" x2="751.405" y2="80.162"/>
@@ -182,8 +198,8 @@
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="666.786" y1="201.289" x2="666.786" y2="80.162"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="660.032" y1="197.484" x2="660.032" y2="80.162"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="651.901" y1="189.208" x2="651.901" y2="80.162"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="645.47" y1="177.679" x2="645.47" y2="80.162"/>
-	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="637.437" y1="164.975" x2="637.437" y2="80.162"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="645.47" y1="177.68" x2="645.47" y2="80.162"/>
+	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="637.438" y1="164.975" x2="637.438" y2="80.162"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="631.38" y1="154.548" x2="631.38" y2="80.162"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="624.289" y1="142.634" x2="624.289" y2="80.162"/>
 	<line fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" x1="764.929" y1="206.491" x2="764.929" y2="81.549"/>
@@ -192,39 +208,43 @@
 </g>
 <g id="Layer_2">
 	<path fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" d="M-4.185,40.317c0,0,46.344-62.706,106.602,0
-		c27.434,29.394,34.292,73.484,76.913,73.484c42.621,0,66.626-29.883,66.626-44.58s-7.839-25.475-18.126-25.475
-		c-10.288,0-17.636,14.696-17.636,25.964c0,11.269,20.086,45.07,66.136,44.091c46.051-0.979,72.211-30.863,72.211-30.863
+		c27.434,29.394,34.292,73.484,76.913,73.484s66.626-29.883,66.626-44.58c0-14.697-7.839-25.475-18.126-25.475
+		c-10.288,0-17.636,14.696-17.636,25.964c0,11.269,20.086,45.069,66.136,44.091c46.051-0.979,72.211-30.863,72.211-30.863
 		S351,78,359,78s409,0.667,409,0.667"/>
 	<path fill="none" stroke="#F1F2F2" stroke-width="2" stroke-miterlimit="10" d="M348.54,85.455c0,0-2.04-4.955,8.46-4.955
 		s411,0,411,0"/>
 </g>
 <g id="Layer_4">
-	<path id="pathA" fill="none" d="M0.302,20.482c0,0,15.768-16.784,48.9-16.784s55.813,18.666,70.139,36s24.992,43.316,38.326,55.658
-		s30.287,9.549,30.287,9.549s27.269-3.516,43.053-23.225c4.493-6.982,6.33-11.482,6.33-11.482S229.5,34,222.961,70.698
-		c0.039,4,2.051,9.832,8.046,17.174s25.072,18.783,47.783,17.305s26.181-3.455,44.196-13.717s25.555-21.762,25.555-21.762L768,68.5"
-		/>
+	<path id="pathA" fill="none" d="M0.302,20.482c0,0,15.768-16.784,48.9-16.784c33.132,0,55.813,18.666,70.139,36
+		c14.326,17.334,24.992,43.315,38.326,55.657c13.334,12.343,30.287,9.549,30.287,9.549s27.269-3.516,43.053-23.225
+		c4.493-6.981,6.33-11.481,6.33-11.481S229.5,34,222.961,70.698c0.039,4,2.051,9.832,8.046,17.174
+		c5.995,7.342,25.072,18.782,47.783,17.305s26.181-3.454,44.196-13.717c18.015-10.262,25.555-21.762,25.555-21.762L768,68.5"/>
 </g>
 <g id="Layer_3">
 	<g>
-		<path fill="#B84B4F" stroke="#B84B4F" stroke-miterlimit="10" d="M10.298,0.155l1.866-0.053c0,0,0.204-0.132,0.878,0.224
-			c0.674,0.354,3.295,1.982,3.295,1.982s0.588,0.232,0.021,0.747c-0.567,0.514-1.453,1.453-1.453,1.453s-0.098,0.104-0.3,0.171
-			c-0.087,0.027-0.191,0.05-0.317,0.054C13.875,4.745,0.931,5.116,0.931,5.116S0.436,5.173,0.42,4.631
-			C0.404,4.094,0.3,0.423,0.3,0.423l2.655-0.077L3.03,2.979l2.031-0.099L4.988,0.289l3.194-0.092l0.077,2.715l2.076-0.059
-			L10.298,0.155z">
-		<animateMotion  id="A1"  begin="indefinite" rotate="auto" dur="3s" restart="always">
-			<mpath  xlink:href="#pathA"></mpath>
-                    </animateMotion>
+		<path fill="#B84B4F" stroke="#B84B4F" stroke-miterlimit="10" d="M-6.307,1.155l1.866-0.053c0,0,0.204-0.132,0.878,0.224
+			c0.674,0.354,3.295,1.982,3.295,1.982S0.32,3.54-0.247,4.055C-0.813,4.569-1.7,5.508-1.7,5.508S-1.797,5.612-2,5.679
+			c-0.087,0.027-0.191,0.05-0.317,0.054c-0.413,0.012-13.357,0.383-13.357,0.383s-0.495,0.057-0.511-0.485
+			c-0.016-0.537-0.12-4.208-0.12-4.208l2.655-0.077l0.075,2.633l2.031-0.099l-0.073-2.591l3.194-0.092l0.077,2.715l2.076-0.059
+			L-6.307,1.155z">
+			
+				<animateMotion  fill="remove" id="A1" begin="indefinite" rotate="auto" dur="3s" restart="always" accumulate="none" additive="replace" calcMode="paced">
+				<mpath  xlink:href="#pathA"></mpath>
+			</animateMotion>
 		</path>
-		<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="14.606,4.68 14.626,5.388 14.152,5.734 0.96,6.111 
-			0.931,5.116">
-		<animateMotion  id="A2"  begin="indefinite" rotate="auto" dur="3s" restart="always">
+		<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="-1.999,5.68 -1.979,6.388 -2.453,6.734 -15.645,7.111 
+			-15.673,6.116 		">
+		
+			<animateMotion  fill="remove" id="A2" begin="indefinite" rotate="auto" dur="3s" restart="always" accumulate="none" additive="replace" calcMode="paced">
 			<mpath  xlink:href="#pathA"></mpath>
-                    </animateMotion>
+		</animateMotion>
 		</polyline>
-		<polygon fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" points="16.21,3.193 0.392,3.646 0.414,4.468 15.357,4.039 ">
-			<animateMotion  id="A3"  begin="indefinite" rotate="auto" dur="3s" restart="always">
+		<polygon fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" points="-0.395,4.193 -16.212,4.646 -16.19,5.468 -1.248,5.039 
+					">
+		
+			<animateMotion  fill="remove" id="A3" begin="indefinite" rotate="auto" dur="3s" restart="always" accumulate="none" additive="replace" calcMode="paced">
 			<mpath  xlink:href="#pathA"></mpath>
-                    </animateMotion>
+		</animateMotion>
 		</polygon>
 	</g>
 </g>
@@ -235,12 +255,12 @@
     </div>
   </div>
   
-  <div class="four columns">
+  <div class="col-md-4">
     <div id="blue" class="backgroundHead">
       <div class="nameHead inset-text">About</div>
       <div class="about">
-        My name is Casey and I’m a rising senior at UNC Chapel Hill majoring in Journalism with a specialization
-        in Multimedia. I’ve put this site together as a way to showcase some of the work that I’ve done.<br /><br />
+        My name is Casey and I'm a senior at UNC Chapel Hill majoring in Journalism with a specialization
+        in Multimedia. I've put this site together as a way to showcase some of the work that I've done.<br /><br />
         
         <!--<span class="dontShow">In my spare time I practice Tae Kwon Do and catch up on tv shows that I've missed during the week. I also enjoy taking pictures, but only as a hobby.<br /><br /></span>-->
         
@@ -249,7 +269,7 @@
     </div>
   </div>
   
-  <div class="four columns">
+  <div class="col-md-4">
     <div id="profile" class="workB">
 
     </div>
@@ -260,14 +280,14 @@
 <!-- row 2 -->
  <a name="work"></a>
 <div class="row">
-  <div class="four columns">
+  <div class="col-md-4">
     <div id="red" class="backgroundHead">
       
       <div class="nameHead inset-text">Front End <br />Work</div>
     </div>
   </div>
   
-  <div class="four columns">
+  <div class="col-md-4">
     <a href="http://www.myajc.com/news/hope-scholarships/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">HOPE</div>
@@ -275,22 +295,21 @@
     <div id="bubbles" class="work">
       <div class="overlayThis">
       Built with d3, this graphic displays information related to the number of students attending school on a HOPE scholarship for a sampling
-      of schools in Georgia. I built this for the AJC this summer and it is slated to run with the lottery package in September.
+      of schools in Georgia.
     </div>
     </div>
     </a>
   </div>
   
-  <div class="four columns">
-    <a href="http://www.myajc.com/news/hope-scholarships/" TARGET="_blank">
+  <div class="col-md-4">
+    <a href="http://www.myajc.com/news/lottery-comparison-map/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Lottery</div>
     </div>
     <div id="compMap" class="work">
           <div class="overlayThis">
       These choropleth comparison maps are built with d3. One displays where HOPE scholarships were received, while the other diplays where lottery
-      tickets were sold. Clicking on the counties will provide more detailed information and allows for comparison between two counties. I built this
-      for the AJC this summer and it is slated to run with the lottery package in September.
+      tickets were sold. Clicking on the counties will provide more detailed information and allows for comparison between two counties.
     </div>
     </div>
     </a>
@@ -303,7 +322,7 @@
 <div class="row">
   
   
-  <div class="four columns">
+  <div class="col-md-4">
     <a href="http://www.ajc.com/weather/precipitation-comparison/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Rain</div>
@@ -317,7 +336,7 @@
     </a>
   </div>
   
-  <div class="four columns">
+  <div class="col-md-4">
     <a href="http://www.accessatlanta.com/entertainment/six-degrees/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Six &#176;</div>
@@ -331,7 +350,7 @@
     </a>
   </div>
   
-  <div class="four columns">
+  <div class="col-md-4">
     <a href="http://www.myajc.com/news/hazardous-rail-crossings/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Rail</div>
@@ -350,15 +369,17 @@
 
 <div class="row">
   
-  <div class="four columns">
+  <div class="col-md-4">
     <a href="http://www.accessatlanta.com/s/atlanta-holiday-guide/holiday-guide-calendar/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Calendar</div>
     </div>
     <div id="calendar" class="work">
       <div class="overlayThis">
-        Though there is currently "dummy" information in this calendar, I promise it is fully functional. Running off of tabletop.js, it allows for the
-        admin to enter all of the information for the month into a Google spreadsheet. The information (in div form), will then be revealed on the specified
+        Though there is currently "dummy" information in this calendar, I promise it is fully functional.
+        <span class="dontShow">Running off of tabletop.js, it allows for the
+        admin to enter all of the information for the month into a Google spreadsheet.</span>
+        The information (in div form), will then be revealed on the specified
         day of the month. The calendar pop-up also loads to the current day by default. A separate version running in November-December is based on the
         day of the year.
       </div>
@@ -366,21 +387,21 @@
     </a>
   </div>
   
-  <div class="four columns">
-    <a href="http://caseymmiller.com/j586/Project%202%20Final/Entireindex.html" TARGET="_blank">
+  <div class="col-md-4">
+    <a href="http://caseymmiller.com/stressedmuch" TARGET="_blank">
     <div id="black" class="typeHead">
-      <div class="nameHead inset-text">Banks</div>
+      <div class="nameHead inset-text">Stress</div>
     </div>
-    <div id="banks" class="work">
+    <div id="stress" class="work">
       <div class="overlayThis">
-        This interactive was created for a class project and displays the number of failed U.S. banks from 2000 through
-        September of 2012. This project runs off of the highcharts library.
+        I created this project to measure campus stress level. The project runs off of google forms and spreadsheets and updates
+        when new votes are cast.
       </div>
     </div>
     </a>
   </div>
   
-  <div class="four columns">
+  <div class="col-md-4">
     <div id="purple" class="backgroundHead">
       <div class="more inset-text">More Work</div>
       
@@ -411,14 +432,14 @@
 <!--Row 5 -->
 
 <div class="row">
-  <div class="four columns">
+  <div class="col-md-4">
     <div id="green" class="backgroundHead">
       
       <div class="nameHead inset-text">Front End/<br />Back End <br />Work</div>
     </div>
   </div>
   
-   <div class="four columns">
+   <div class="col-md-4">
     <a href="http://intense-castle-9945.herokuapp.com/" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">Django</div>
@@ -432,7 +453,7 @@
     </a>
   </div>
   
-   <div class="four columns">
+   <div class="col-md-4">
     <a href="http://livinggalapagos.org" TARGET="_blank">
     <div id="black" class="typeHead">
       <div class="nameHead inset-text">GALAPAGOS</div>
@@ -455,125 +476,24 @@
  
 <!-- row 6 -->
 <div class="row">
-  <a name="resume"></a>
-  <div class="eight columns">
     
-    <div class="resume">
-      <h2>Casey Miller</h2>
-      <h3>814.566.2276 &#124; <a href="mailto:caseymm@gmail.com">caseymm@gmail.com</h3></a>
-<div class="text-center"><p>
-<table class="twelve">
-				
-<tr>
-	<th>EDUCATION</th>
-	<th> </th>
-						
-</tr>
-                    
-<tr>
-	<td><b>The University of North Carolina at Chapel Hill</b></br>Bachelors in Journalism and Mass Communication</br>Specialization in Multimedia</td>
-	<td><div class="dates"><b>Chapel Hill, NC</b><br />May 2014</div></td>
-						
-</tr>
-                    
-<tr>
-	<td><b>The American University</b></br>Bachelor of Science in Business Administration</br>Honors Program</td>
-	<td><div class="dates"><b>Washington, DC</b><br />August 2010 – May 2011</div></td>					
-</tr>
-                    
-<tr>
-	<th>WORK EXPERIENCE</th>
-	<th> </th>
-</tr>
-		    
-<tr>
-	<td><b>Reese News Lab</b></br>Interactive Designer/Programmer</td>
-	<td><div class="dates"><b>Chapel Hill, NC</b><br />August 2013 - Present</div></td>					
-</tr>
-
-<tr>
-	<td><b>Atlanta Journal-Constitution</b></br>Digital Interactive Intern</td>
-	<td><div class="dates"><b>Atlanta, GA</b><br />June 2013 - August 2013</div></td>					
-</tr>
-		    
-<tr>
-	<th>RELEVANT SKILLS</th>
-	<th> </th>
-</tr>
-                    
-<tr>
-	<td><b>Skills</b></br>CSS, HTML, Responsive Design, Javascript, jQuery, d3.js, SVG, and Django<b><br /><br />Programs</b></br>Illustrator, Photoshop, Final Cut</td>
-	<td> </td>					
-</tr>
-                    
-<tr>
-	<th>RELEVANT COURSEWORK</th>
-	<th> </th>
-</tr>
-                    
-		    
-<tr>
-	<td><b>Advanced Multimedia</b></br>Built applications in Django - primary work in views, models and templates</td>
-	<td><div class="dates">Spring 2013</div></td>					
-</tr>
-		    
-<tr>
-	<td><b>Living Galapagos</b></br>Changed and added new features and content to the existing UNC's Living Galapagos website<br />Primary work in Django templates</td>
-	<td><div class="dates">Spring 2013</div></td>					
-</tr>
-		    
-<tr>
-	<td><b>Intermediate Multimedia</b></br>Worked with CSS, HTML, Javascript, Ajax, JQuery, and XML</td>
-	<td><div class="dates">Fall 2012</div></td>					
-</tr>
-                    
-<!--<tr>
-	<td><b>Introduction to Multimedia</b></br>Worked with Wordpress, CSS, and HTML</td>
-	<td><div class="dates">Summer 2012</div></td>					
-</tr>-->
-                    
-<tr>
-	<td><b>Introduction to Graphic Design</b></br>Worked with the Adobe Creative Suite, primarily Illustrator, Photoshop, and InDesign</td>
-	<td><div class="dates">Spring 2012</div></td>					
-</tr>
-                    
-<tr>
-	<th>EXPERIENCE & ACTIVITIES</th>
-	<th> </th>
-</tr>
-                    
-<tr>
-	<td><b>Carolina Tae Kwon Do Club, University of North Carolina at Chapel Hill</b></br><i>President</i></br>Organize club meeting times and events in coordination with the Sport Club Council</br>Meet with club officers to plan club budget, special events, and other club proceedings</br>Keep members up to date on club events through email announcements
-</br><i>Head of Demo Team</i></br>Plan organized demonstrations with other demo team members</br>Manage contact of demo team members and officers of other clubs
-</td>
-	<td><div class="dates"><b>Chapel Hill, NC</b><br />February 2012 – February 2013<br /><br /><br />November 2012 – Present</div></td>					
-</tr>
-                    
-<tr>
-	<td><b>Undergraduate Business Association, American University</b></br><i>Marketing Chair</i></br>Conducted a marketing research project along with UBA President to gauge student interest in Kogod clubs
-</td>
-	<td><div class="dates"><b>Washington, DC</b><br />August 2010 – May 2011</div></td>					
-</tr>
-                    
-<tr>
-	<td><b>Red Dragon Martial Arts</b></br><i>Assistant Martial Arts Instructor</i></br>Instructed Children's Classes</br>Led warm-ups, forms, basics, and other activities for the children</br>Handled monthly payments for lessons and opened and closed the building for classes 
-</td>
-	<td><div class="dates"><b>Erie, PA</b><br />November 2009 - July 2010</div></td>					
-</tr>
-                    
-<tr>
-	<td><b>ExpERIEnce Children’s Museum</b></br><i>Assistant Volunteer Coordinator</i></br>Led new volunteer orientations which familiarized the new volunteers with the areas and general protocols in the museum</br>Managed five to six daily volunteers by assigning them tasks and supervising them to make sure that they followed directions
-</td>
-	<td><div class="dates"><b>Erie, PA</b><br />March 2009 - July 2010</div></td>					
-</tr>
-
-
-</table>
-</p></div>
+    <div class="col-md-4">
+    <!--<a href="#">-->
+    <div id="black" class="typeHead">
+      <div class="nameHead inset-text">Search</div>
     </div>
+    <div id="ch" class="work">
+      <div class="overlayThis">
+        <h4>COMING SOON</h4>
+        I'm currently working on the backend for one of Reese News Lab's summer start-up projects, Capitol Hound. The application will allow users to search
+        through transcripts from the North Carolina General assembly.
+      </div>
+    </div>
+    <!--</a>-->
   </div>
+
   
-  <div class="four columns">
+  <div class="col-md-8">
     <a name="contact"></a> 
     <div id="black" class="backgroundFoot">
       <div class="nameHead inset-text">Contact</div>
@@ -651,6 +571,106 @@
   </div>
   
 </div>
+
+<!-- Modal -->
+  <div class="modal" id="resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2 class="modal-title">Casey Miller</h2>
+            <h4>814.566.2276 &#124; <a class="red" href="mailto:caseymm@gmail.com">caseymm@gmail.com</a></h4>
+	    <h5><a class="red" href="resume.pdf">Download Resume</a></h5>
+        </div>
+        <div class="modal-body">
+            
+            <table class="table">
+				
+            <tr class="gray">
+                    <th>EDUCATION</th>
+                    <th> </th>
+                                                            
+            </tr>
+                                
+            <tr>
+                    <td><b>The University of North Carolina at Chapel Hill</b></br>Bachelors in Journalism and Mass Communication</br>Specialization in Multimedia</td>
+                    <td><div class="dates"><b>Chapel Hill, NC</b><br />May 2014</div></td>
+                                                            
+            </tr>
+                                
+            <tr>
+                    <td><b>The American University</b></br>Bachelor of Science in Business Administration</br>Honors Program</td>
+                    <td><div class="dates"><b>Washington, DC</b><br />August 2010 - May 2011</div></td>					
+            </tr>
+                                
+            <tr class="gray">
+                    <th>WORK EXPERIENCE</th>
+                    <th> </th>
+            </tr>
+                                
+            <tr>
+                    <td><b>Reese News Lab</b></br>Team Leader
+                    <li>Manage a group of four team members working on a start-up idea</li>
+                    <li>Contact members from news organizations to receive input and conduct user tests</li>
+                    <li>Work with my team members to devise a marketing plan and a business plan for our idea</li>
+                    </td>
+                    <td><div class="dates"><b>Chapel Hill, NC</b><br />August 2013 - Present</div></td>					
+            </tr>
+            
+            <tr>
+                    <td><b>Atlanta Journal-Constitution</b></br>Digital Interactive Intern
+                    <li>Created interactive graphics to accompany news stories</li>
+                    <li>Revised the Holiday Guide calendar to allow for automated daily reveal of deals</li>
+                    </td>
+                    <td><div class="dates"><b>Atlanta, GA</b><br />June 2013 - August 2013</div></td>					
+            </tr>
+                                
+            <tr class="gray">
+                    <th>RELEVANT SKILLS</th>
+                    <th> </th>
+            </tr>
+                                
+            <tr>
+                    <td><b>Skills</b></br>CSS, HTML, Responsive Design, Javascript, jQuery, d3.js, SVG, and Django</td>
+                    <td> </td>					
+            </tr>
+	    
+	    <tr>
+		    <td><b>Programs</b></br>Illustrator, Photoshop, Final Cut</td>
+		    <td></td>
+	    </tr>
+                            
+                                
+            <tr class="gray">
+                    <th>EXPERIENCE & ACTIVITIES</th>
+                    <th> </th>
+            </tr>
+            
+	    <tr>
+                
+                    <td><b>Online News Association, University of North Carolina at Chapel Hill</b></br>Officer</br>
+                    <li>Help to organize club events including the scheduling of help sessions and invitation of speakers</li>
+                    <li>Created and currently maintain the club's website</li>
+            
+            </td>
+                    <td><div class="dates"><b>Chapel Hill, NC</b><br />August 2013 - Present</div></td>
+                
+            </tr>
+	                        
+            <tr>
+                    <td><b>Carolina Tae Kwon Do Club, University of North Carolina at Chapel Hill</b></br>Head of Demo Team</br><li>Plan and organize the team demonstration held every spring</li><li>Devise workouts that will benefit all team members as much as possible</li>
+                    <br />President</br><li>Organized club meeting times and events in coordination with the Sport Club Council</li><li>Met with club officers to plan club budget, special events, and other club proceedings</li><li>Keep members up to date on club events through email announcements</li>
+            </br>
+            </td>
+                    <td><div class="dates"><b>Chapel Hill, NC</b><br />November 2012 - Present<br /><br /><br />February 2012 - February 2013</div></td>					
+            </tr>
+                                
+            </table>
+            
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
   
 <script>
   
@@ -693,6 +713,9 @@
     $('#maps').show();
   });*/
 </script>
-  
+
+</div>
+  <br />
+  <br />
 </body>
 </html>
