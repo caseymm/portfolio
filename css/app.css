@@ -21,6 +21,10 @@ background-repeat:repeat; font-family: "Helvetica"; font-weight: normal; font-st
     display: none;
 }
 
+.bebas{
+    font-family: 'Bebas';
+}
+
 .aboutText{
     width:60%;
     float: left;
@@ -33,7 +37,7 @@ background-repeat:repeat; font-family: "Helvetica"; font-weight: normal; font-st
 
 .btn-group{
     color: #ffffff;
-    background-image: url('../images/txtureN.png');
+    background-image: url('../images/txtureN.png') !important;
     border-color: #cccccc;
     border-radius: 5px;
     -webkit-box-shadow: 2px 2px 2px #747171;
@@ -45,45 +49,83 @@ background-repeat:repeat; font-family: "Helvetica"; font-weight: normal; font-st
 }
 
 .btn-group .btn-work:hover,
-.btn-group .btn-work:focus{
+.btn-group .btn-work:focus,
+.btn-group .btn-work:active{
     color: #ffffff;
-    /*background-color: rgba(201, 205, 213, 0.3) !important;*/
-    /*background-image: url('../images/txtureRed.png');*/
+    /*background-color: rgba(201, 205, 213, 0.0) !important;
+    background-image: url('../images/txtureN.png');*/
 }
 
 .txtBlack{
     color: #ffffff;
-    background-image: url('../images/txtureN.png') !important;
+    background-image: url('../images/txtureN.png');
 }
 
-.txtRed:hover, .txtRed:focus, .txtRed:active{
+.txtRed:hover, .txtRed:focus{
     color: #ffffff;
-    background-image: url('../images/txtureRed.png');
+    background-image: url('../images/txtureRed.png') !important;
+}
+
+.clickRed{
+    color: #ffffff;
+    background-image: url('../images/txtureRed.png') !important;
 }
 
 .txtBlue:hover, .txtBlue:focus{
     color: #ffffff;
-    background-image: url('../images/txtureBlue.png');
+    background-image: url('../images/txtureBlue.png') !important;
+}
+
+.clickBlue{
+    color: #ffffff;
+    background-image: url('../images/txtureBlue.png') !important;
 }
 
 .txtGreen:hover, .txtGreen:focus{
     color: #ffffff;
-    background-image: url('../images/txtureGreen.png');
+    background-image: url('../images/txtureGreen.png') !important;
+}
+
+.clickGreen{
+    color: #ffffff;
+    background-image: url('../images/txtureGreen.png') !important;
 }
 
 .txtPurple:hover, .txtPurple:focus{
     color: #ffffff;
-    background-image: url('../images/txturePurple.png');
+    background-image: url('../images/txturePurple.png') !important;
+}
+
+.clickPurple{
+    color: #ffffff;
+    background-image: url('../images/txturePurple.png') !important;
 }
 
 .txtYellow:hover, .txtYellow:focus{
     color: #ffffff;
-    background-image: url('../images/txtureYellow.png');
+    background-image: url('../images/txtureYellow.png') !important;
+}
+
+.clickYellow{
+    color: #ffffff;
+    background-image: url('../images/txtureYellow.png') !important;
 }
 
 .sort{
     margin-top: 25px;
     height: 40px;
+}
+
+.infoBox{
+    height: 80px;
+    margin-top: -3px;
+    padding: 10px 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-box-shadow: 2px 2px 2px #747171;
+    box-shadow: 2px 2px 2px #747171;
+    position: relative;
+    z-index: 1000;
 }
 
 .white{
@@ -232,7 +274,7 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 
 #profile{
   /*background-image:url('../images/profile.png');*/
-  background-image:url('../images/superman330.jpg');
+  background-image:url('../images/profileHold.jpg');
   height: 310px;
   border-radius: 3px;
   border-color: #ffffff;
@@ -267,6 +309,10 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 
 #rail{
   background-image:url('../images/railMap.png');
+}
+
+#farms{
+  background-image:url('../images/farms.png');
 }
 
 #fireworkMap{
@@ -373,6 +419,31 @@ line-height: 20px;
   border-top-left-radius:3px;
   -webkit-box-shadow: 2px 2px 2px #373737;
 	box-shadow: 2px 2px 2px #373737;
+}
+
+#blackRed{
+    background-image:url('../images/blackRed.png');
+  background-repeat:repeat;
+}
+
+#blackPurple{
+    background-image:url('../images/blackPurple.png');
+  background-repeat:repeat;
+}
+
+#blackGreen{
+    background-image:url('../images/blackGreen.png');
+  background-repeat:repeat;
+}
+
+#blackBlue{
+    background-image:url('../images/blackBlue.png');
+  background-repeat:repeat;
+}
+
+#blackYellow{
+    background-image:url('../images/blackYellow.png');
+  background-repeat:repeat;
 }
 
 #black{
@@ -588,6 +659,10 @@ line-height: 20px;
 .work{
     margin-top: -6.15em;
 }
+
+.overlayThis{
+    padding: 70px 10px 10px 10px;
+}
 .dontShow{display:none;}
 }
 
@@ -601,6 +676,9 @@ line-height: 20px;
 }
 .work{
     margin-top: -7.15em;
+}
+.overlayThis{
+    padding: 90px 10px 10px 10px;
 }
 
 }
