@@ -1814,7 +1814,7 @@ textarea.input-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 1px solid #373737;
   border-radius: 4px;
   white-space: nowrap;
   -webkit-user-select: none;
@@ -3671,7 +3671,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-default {
   /*background-color: #373;*/
-  background-image: url(../images/txture.png);
+  background-image: url(../images/txtureN.png);
   /*border-color: #e7e7e7;*/
 }
 .navbar-default .navbar-brand {
